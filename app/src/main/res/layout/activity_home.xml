@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/Linha_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#F8F6F6"
+        android:textColorHint="#ECE4E4"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/edit_nome2"
+        style="@style/Edit_Text"
+        android:layout_width="328dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/Linha_numero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Pesquisa"
+        android:inputType="text"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        style="@style/Button"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:text="Histórico"
+        android:onClick="abrindo_historico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_nome2" />
+
+    <!--<View
+        android:id="@+id/containerComponents4"
+        style="@style/ContainerComponents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton" />-->
+
+    <!---<View
+        android:id="@+id/containerComponents5"
+        style="@style/ContainerComponents3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <View
+        android:id="@+id/containerComponents6"
+        style="@style/ContainerComponents3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />-->
+
+    <!--- <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A168     Ralip     Graziela"
+        android:textAllCaps="false"
+        android:textColor="#FDFBFB"
+        android:textSize="25sp"
+        android:onClick="abrindo_graziela"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="60dp"
+        app:layout_constraintTop_toTopOf="@+id/containerComponents4"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents4"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents4"
+        />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A268     Benfica  Vale do Sol"
+        android:textAllCaps="false"
+        android:textColor="#F3EEEE"
+        android:textSize="25sp"
+        android:onClick="abrindo_vale"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/containerComponents5"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents4"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents4"
+        />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A165     Ralip     Tupanci"
+        android:textAllCaps="false"
+        android:textColor="#F4F2F2"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:onClick="abrindo_tupanci"
+        android:layout_marginRight="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/containerComponents6"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents4"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents4"
+        />-->
+
+    <fragment
+        android:id="@+id/lista_linhas"
+        android:name="com.example.app_busmap.fragments.LinhaFragment"
+        class="com.example.app_busmap.fragments.LinhaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/relativeLayout"
+        android:layout_marginTop="40dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/ic_home3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="abrindo_perfil"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_user" />
+
+        <ImageView
+            android:id="@+id/ic_home"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_home" />
+
+        <ImageView
+            android:id="@+id/ic_home2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="abrindo_favoritos"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="181dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_heart" />
+
+
+
+
+        <!--<ImageView
+            android:id="@+id/ic_home4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="abrindo_graziela"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_seta" />
+
+        <ImageView
+            android:id="@+id/ic_home5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="abrindo_vale"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_seta" />
+
+        <ImageView
+            android:id="@+id/ic_home6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="abrindo_tupanci"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="215dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_seta" />-->
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

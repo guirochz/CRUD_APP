@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo">
+
+    <TextView
+        android:id="@+id/Linha_numero"
+        android:layout_width="254dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:text="Linha A165"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Sentido: Terminal Barueri / Jardim São Luiz via Vila Porto"
+        android:textColor="#101010"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Linha_numero" />
+
+    <View
+        android:id="@+id/containerComponents4"
+        style="@style/ContainerComponents"
+        android:layout_width="367dp"
+        android:layout_height="390dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginTop="25dp"
+        android:text="ID: 56724950"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents4"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents4"
+        app:layout_constraintTop_toTopOf="@+id/containerComponents4" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginTop="15dp"
+        android:text="Nome: Tupanci"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents4"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents4"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginTop="15dp"
+        android:text="Empresa: RALIP"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents4"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents4"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="140dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginTop="15dp"
+        android:text="CEP: 06423910"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents4"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents4"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"/>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="190dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginTop="20dp"
+        android:text="Site com o itinerário:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents4"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents4"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="http://201.55.91.170:8090/horarios_linhas/?cod_linha=59:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents4"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents4"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="134dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/fundo"
+        android:text="Ruas"
+        android:textSize="20sp"
+        android:onClick="abrindo_ruas"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents4"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents4"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="139dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="150dp"
+        android:backgroundTint="@color/fundo"
+        android:text="Pontos"
+        android:textSize="20sp"
+        android:onClick="abrindo_pontos"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents4"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents4"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/ic_home3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="abrindo_perfil"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_user" />
+
+        <ImageView
+            android:id="@+id/ic_home"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="abrindo_home"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_home" />
+
+        <ImageView
+            android:id="@+id/ic_home2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="abrindo_favoritos"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="181dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_heart" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

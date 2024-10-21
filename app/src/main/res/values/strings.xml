@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">App_BusMap</string>
+    <string name="entrar">Entrar</string>
+    <string name="textcadastro">Crie uma conta clicando <u>aqui</u></string>
+    <string name="title_cadastro">Cadastre-se</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="title_historico">Seu historico</string>
+    <string name="title_esquecisenha">Esqueci senha</string>
+    <string name="fale">Fale Conosco</string>
+    <string name="esqueci">Esqueceu a senha? <u>Clique aqui.</u></string>
+    <string name="cadastro">Clique <u>aqui</u> para retornar ao login.</string>
+
+</resources>

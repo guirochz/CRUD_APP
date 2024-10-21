@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo">
+
+    <TextView
+        android:id="@+id/Linha_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="16dp"
+        android:text="Linhas"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Linhas que passam nessa rua"
+        android:layout_marginTop="15dp"
+        android:textColor="#101010"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Linha_numero" />
+
+    <View
+        android:id="@+id/containerComponents4"
+        style="@style/ContainerComponents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <View
+        android:id="@+id/containerComponents5"
+        style="@style/ContainerComponents3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <View
+        android:id="@+id/containerComponents6"
+        style="@style/ContainerComponents3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A168     Ralip     Graziela"
+        android:textAllCaps="false"
+        android:textColor="#FDFBFB"
+        android:textSize="25sp"
+        android:onClick="abrindo_graziela"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="60dp"
+        app:layout_constraintTop_toTopOf="@+id/containerComponents4"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents4"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents4"
+        />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T173     Ralip     Kartódromo "
+        android:textAllCaps="false"
+        android:textColor="#F3EEEE"
+        android:textSize="25sp"
+        android:onClick="abrindo_vale"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/containerComponents5"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents4"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents4"
+        />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T411     BB     Barueri Centro"
+        android:textAllCaps="false"
+        android:textColor="#F4F2F2"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:onClick="abrindo_tupanci"
+        android:layout_marginRight="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/containerComponents6"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents4"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents4"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/ic_home3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="abrindo_perfil"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_user" />
+
+        <ImageView
+            android:id="@+id/ic_home"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="abrindo_home"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_home" />
+
+        <ImageView
+            android:id="@+id/ic_home2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="abrindo_favoritos"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="181dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_heart" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
