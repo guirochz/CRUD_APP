@@ -15,11 +15,11 @@ public class LinhaBanco {
     static public LinhaDTO obterLinhaPorNumero(Context ctx, String numero) throws Exception {
 
         try {
-            PreparedStatement pst = ConexaoBanco.conectar(ctx).prepareStatement("select numero, empresa, nomeIda,  from linha where numero = ?");
+            PreparedStatement pst = ConexaoBanco.conectar(ctx).prepareStatement("select numero, empresa, nomeIda, nomeVolta, info from linha where numero = ?");
             pst.setString(1, numero);
             ResultSet set = pst.executeQuery();
             while (set.next()) {
-                return  new LinhaDTO(set.getString(3), set.getString(2), set.getString(1));
+                return  new LinhaDTO(set.getString(3), set.getString(2), set.getString(1), set.getString(5), set.getString(4));
             }
         }
         catch (Exception e) {

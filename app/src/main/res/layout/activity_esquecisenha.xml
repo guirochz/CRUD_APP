@@ -7,9 +7,9 @@
     android:background="@color/fundo">
 
     <TextView
-        android:id="@+id/Linha_numero"
-        android:layout_width="320dp"
-        android:layout_height="66dp"
+        android:id="@+id/esquecisenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/title_esquecisenha"
         android:textColor="@color/white"
         android:textSize="48sp"
@@ -30,44 +30,49 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.561" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="316dp"
-        android:layout_height="65dp"
-        android:fontFamily="sans-serif-condensed"
-        android:layout_marginTop="60dp"
-        android:text="Adicione o email para receber o código de verificação."
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/containerComponents2"
-        app:layout_constraintStart_toStartOf="@+id/containerComponents2"
-        app:layout_constraintTop_toTopOf="@+id/containerComponents2" />
-
     <EditText
         android:id="@+id/editTextEmail"
         style="@style/Edit_Text"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:hint="Email"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="@id/containerComponents2"
         app:layout_constraintStart_toStartOf="@id/containerComponents2"
-        app:layout_constraintTop_toBottomOf="@id/textView3" />
+        app:layout_constraintTop_toTopOf="@id/containerComponents2" />
+
+    <EditText
+        android:id="@+id/editTextSenha"
+        style="@style/Edit_Text"
+        android:layout_marginTop="20dp"
+        android:hint="Nova senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents2"
+        app:layout_constraintStart_toStartOf="@id/containerComponents2"
+        app:layout_constraintTop_toBottomOf="@id/editTextEmail" />
+
+    <EditText
+        android:id="@+id/editTextSenha2"
+        style="@style/Edit_Text"
+        android:layout_marginTop="20dp"
+        android:hint="Confirmar nova senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents2"
+        app:layout_constraintStart_toStartOf="@id/containerComponents2"
+        app:layout_constraintTop_toBottomOf="@id/editTextSenha" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="179dp"
-        android:layout_height="59dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/fundo"
-        android:text="Enviar código"
+        android:text="Confirmar senha"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:onClick="abrindo_esqueci2"
         app:layout_constraintEnd_toEndOf="@+id/containerComponents2"
         app:layout_constraintStart_toStartOf="@+id/containerComponents2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextSenha2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

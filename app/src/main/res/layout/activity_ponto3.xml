@@ -23,7 +23,7 @@
         />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/empresa_nome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="28dp"
@@ -43,7 +43,7 @@
         android:layout_height="440dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView9" />
+        app:layout_constraintTop_toBottomOf="@id/empresa_nome" />
 
     <TextView
         android:id="@+id/textView10"
@@ -73,7 +73,7 @@
         app:layout_constraintTop_toTopOf="@+id/containerComponents3" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CEP: 06401-010"
@@ -95,7 +95,7 @@
         android:layout_marginStart="140dp"
         app:layout_constraintEnd_toEndOf="@+id/containerComponents3"
         app:layout_constraintStart_toStartOf="@+id/containerComponents3"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"/>
+        app:layout_constraintTop_toBottomOf="@+id/info"/>
 
     <TextView
         android:id="@+id/textView13"
@@ -123,7 +123,7 @@
         android:layout_marginStart="160dp"
         app:layout_constraintEnd_toEndOf="@+id/containerComponents3"
         app:layout_constraintStart_toStartOf="@+id/containerComponents3"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"/>
+        app:layout_constraintTop_toBottomOf="@+id/info"/>
 
     <TextView
         android:id="@+id/textView15"

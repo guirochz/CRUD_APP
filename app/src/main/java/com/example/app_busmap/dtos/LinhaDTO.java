@@ -7,10 +7,36 @@ public class LinhaDTO {
 
     private String info;
 
+    private String nomeVolta;
+
     public LinhaDTO(String nomeIda, String empresa, String numero) {
         this.nomeIda = nomeIda;
         this.empresa = empresa;
         this.numero = numero;
+    }
+
+    public LinhaDTO(String nomeIda, String empresa, String numero, String info, String nomeVolta) {
+        this.nomeIda = nomeIda;
+        this.empresa = empresa;
+        this.numero = numero;
+        this.info = info;
+        this.nomeVolta = nomeVolta;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
+    }
+
+    public String getNomeVolta() {
+        return nomeVolta;
+    }
+
+    public void setNomeVolta(String nomeVolta) {
+        this.nomeVolta = nomeVolta;
     }
 
     public String getNomeIda() {

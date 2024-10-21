@@ -67,7 +67,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/empresa_nome"
         android:layout_width="180dp"
         android:layout_height="30dp"
         android:layout_marginEnd="140dp"
@@ -90,7 +90,7 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/containerComponents4"
         app:layout_constraintEnd_toEndOf="@id/containerComponents4"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"/>
+        app:layout_constraintTop_toBottomOf="@+id/empresa_nome"/>
 
     <TextView
         android:id="@+id/textView11"
@@ -106,7 +106,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10"/>
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/info"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
@@ -129,7 +129,7 @@
         android:onClick="abrindo_ruas"
         app:layout_constraintStart_toStartOf="@+id/containerComponents4"
         app:layout_constraintEnd_toEndOf="@id/containerComponents4"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"/>
+        app:layout_constraintTop_toBottomOf="@+id/info"/>
 
     <Button
         android:id="@+id/button3"
@@ -143,7 +143,7 @@
         android:onClick="abrindo_pontos"
         app:layout_constraintStart_toStartOf="@+id/containerComponents4"
         app:layout_constraintEnd_toEndOf="@id/containerComponents4"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"/>
+        app:layout_constraintTop_toBottomOf="@+id/info"/>
 
     <RelativeLayout
         android:id="@+id/relativeLayout"

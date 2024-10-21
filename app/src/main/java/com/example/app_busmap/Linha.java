@@ -10,6 +10,8 @@ import android.widget.TextView;
 import com.example.app_busmap.db.LinhaBanco;
 import com.example.app_busmap.dtos.LinhaDTO;
 
+import org.w3c.dom.Text;
+
 public class Linha extends AppCompatActivity {
 
     @Override
@@ -23,7 +25,12 @@ public class Linha extends AppCompatActivity {
             LinhaDTO linha = LinhaBanco.obterLinhaPorNumero(getBaseContext(), numero);
 
             TextView linhaNumero = findViewById(R.id.Linha_numero);
-            linhaNumero.setText("Linha" + linha.getNumero());
+            TextView info = findViewById(R.id.info);
+            info.setText(linha.getInfo());
+            TextView empresa = findViewById(R.id.empresa_nome);
+            empresa.setText("Empresa: " + linha.getEmpresa());
+            //TextView nomeId = findViewById(R.id)
+            linhaNumero.setText("Linha " + linha.getNumero());
         }
         catch (Exception e) {
 
